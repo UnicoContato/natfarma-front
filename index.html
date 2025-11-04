@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatFarma - Cuidando de você!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#DC2626', 
+                        'primary-dark': '#B91C1C', 
+                        'secondary': '#FACC15', 
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased">
+
+    <header id="header" class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-3xl font-bold text-primary">
+                NATFARMA
+            </a>
+
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#inicio" class="text-gray-700 hover:text-primary">Início</a>
+                <a href="#sobre" class="text-gray-700 hover:text-primary">Sobre Nós</a>
+                <a href="#servicos" class="text-gray-700 hover:text-primary">Serviços</a>
+                <a href="#galeria" class="text-gray-700 hover:text-primary">Galeria</a>
+                <a href="#contato" class="text-gray-700 hover:text-primary">Contato</a>
+                <a href="https://api.whatsapp.com/send?phone=551432632140&text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-lg">
+                    Peça pelo WhatsApp
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="menu-mobile" class="fixed top-0 right-0 w-2/3 h-full bg-white shadow-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <div class="flex flex-col p-8 space-y-4">
+                <a href="#inicio" class="text-lg text-gray-800 hover:text-primary">Início</a>
+                <a href="#sobre" class="text-lg text-gray-800 hover:text-primary">Sobre Nós</a>
+                <a href="#servicos" class="text-lg text-gray-800 hover:text-primary">Serviços</a>
+                <a href="#galeria" class="text-lg text-gray-800 hover:text-primary">Galeria</a>
+                <a href="#contato" class="text-lg text-gray-800 hover:text-primary">Contato</a>
+                <a href="https://api.whatsapp.com/send?phone=551432632140&text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="mt-4 bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-full transition duration-300 text-center">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('img/4.jpg');">
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content text-center text-white">
+                <h1 class="text-6xl md:text-8xl font-extrabold mb-4 drop-shadow-lg">NATFARMA</h1>
+                <p class="text-2xl md:text-3xl font-light mb-8 drop-shadow-md">Cuidando de você!</p>
+                <a href="https://api.whatsapp.com/send?phone=551432632140&text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 shadow-xl transform hover:scale-105">
+                    Faça seu Pedido
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Sobre Nós</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Bem-vindo à NatFarma, sua parceira completa em saúde e bem-estar em Lençóis Paulista. Desde a nossa fundação, nos dedicamos a oferecer um atendimento farmacêutico de excelência, indo além da simples venda de medicamentos. Nossa missão é cuidar de você e de sua família em todas as fases da vida.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Em nossa loja, você encontra uma vasta gama de produtos, desde medicamentos e genéricos até cosméticos, perfumaria e itens de higiene pessoal. Também somos especializados em artigos médicos e ortopédicos, e oferecemos serviços de vacinação e imunização humana, sempre com a segurança e a confiança que você merece. Venha nos visitar e descubra tudo o que a NatFarma pode fazer pela sua saúde.
+                </p>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-12">Nossos Serviços</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-16 h-16 text-primary mx-auto mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v.316c0 .355-.186.676-.401.959-.221.29-.349.634-.349 1.003 0 1.036 1.007 1.875 2.25 1.875s2.25-.84 2.25-1.875c0-.369-.128-.713-.349-1.003a.87.87 0 01-.401-.959v-.316zM14.25 6.087v.316c0 .355.186.676.401.959.221.29.349.634.349 1.003 0 1.036-1.007 1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v.316c0 .355-.186.676-.401.959-.221.29-.349.634-.349 1.003 0 1.036 1.007 1.875 2.25 1.875s2.25-.84 2.25-1.875c0-.369-.128-.713-.349-1.003a.87.87 0 01-.401-.959v-.316zM14.25 6.087V3.75c0-1.036-1.007-1.875-2.25-1.875S9.75 2.714 9.75 3.75v10.5c0 1.036 1.007 1.875 2.25 1.875s2.25-.84 2.25-1.875V12M9.75 12h4.5M3.75 15a.75.75 0 01.75-.75h15a.75.75 0 010 1.5h-15a.75.75 0 01-.75-.75z" />
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Produtos Farmacêuticos</h3>
+                        <p class="text-gray-600">Ampla variedade de medicamentos, genéricos e produtos de saúde para seu tratamento.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-16 h-16 text-primary mx-auto mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L1.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L25.5 5.25l-.813 2.846a4.5 4.5 0 00-3.09 3.09L18.25 12l-2.846.813a4.5 4.5 0 00-3.09 3.09L11.5 18.75l.813-2.846a4.5 4.5 0 003.09-3.09L18.25 12z" />
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Cosméticos e Perfumaria</h3>
+                        <p class="text-gray-600">As melhores marcas de produtos de beleza, higiene pessoal e perfumaria.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-16 h-16 text-primary mx-auto mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Artigos Médicos e Ortopédicos</h3>
+                        <p class="text-gray-600">Equipamentos, produtos ortopédicos e artigos médicos para sua recuperação e bem-estar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Nossa Loja</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <img src="img/1.jpg" alt="Fachada da Farmácia NatFarma" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+                    <img src="img/2.jpg" alt="Promoções Rede Inova" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+                    <img src="img/3.jpg" alt="Cartão de Visita" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-20 bg-gray-900 text-gray-300">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12">
+                    
+                    <div>
+                        <h2 class="text-4xl font-bold text-white mb-6">Contato e Localização</h2>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">Empresa:</span>
+                                <span>MN FARMA LTDA - ME</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">Endereço:</span>
+                                <span>AV NOVE DE JULHO, 615</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">Bairro:</span>
+                                <span>CENTRO</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">Cidade:</span>
+                                <span>LENCOIS PAULISTA - SP</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">CEP:</span>
+                                <span>18.682-000</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">Telefones:</span>
+                                <span>(14) 3263-2140 / (14) 3263-3890</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-white w-32">Email:</span>
+                                <span>ADMINISTRACAO@ROMANICONTABILIDADE.COM.BR</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-full h-[500px] md:h-full rounded-lg overflow-hidden shadow-2xl">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.075422891963!2d-48.8021946850444!3d-22.60012298510803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949a8f4c2f6b4e3d%3A0x8f376f9c4f0b8d6!2sAv.%20Nove%20de%20Julho%2C%20615%20-%20Centro%2C%20Len%C3%A7%C3%B3is%20Paulista%20-%20SP%2C%2018682-000!5e0!3m2!1spt-BR!2sbr!4v1678891234567!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 bg-gray-800 text-center text-gray-400">
+        <div class="container mx-auto px-6">
+            <p class="mb-2">© <span id="current-year"></span> NatFarma. Todos os direitos reservados.</p>
+            <a id="open-modal" class="cursor-pointer hover:text-white hover:underline">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white w-full max-w-2xl max-h-[90vh] rounded-lg shadow-2xl p-8 relative overflow-y-auto">
+            <button id="close-modal" class="absolute top-4 right-6 text-gray-600 hover:text-gray-900 text-3xl">×</button>
+            
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Política de Privacidade</h2>
+            
+            <div class="space-y-4 text-gray-700">
+                <p>Este site é institucional e não coleta dados pessoais de seus visitantes, exceto pelos cookies estritamente necessários para o funcionamento técnico da página (como os de sessão).</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800 pt-2">1. Coleta de Dados</h3>
+                <p>Não utilizamos formulários de contato, sistemas de comentários ou ferramentas de análise (analytics) que rastreiem ou armazenem informações de identificação pessoal (como nome, e-mail ou endereço IP).</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800 pt-2">2. Links Externos (WhatsApp e Google Maps)</h3>
+                <p>Nosso site contém links para serviços de terceiros (WhatsApp e Google Maps). Ao clicar nesses links, você será redirecionado para as plataformas deles, que possuem suas próprias políticas de privacidade. Não nos responsabilizamos pelas práticas de privacidade desses serviços.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800 pt-2">3. Cookies</h3>
+                <p>Utilizamos apenas cookies essenciais para a navegação e funcionalidade básica do site. Não usamos cookies de marketing, publicidade ou análise de terceiros.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800 pt-2">4. Seus Direitos</h3>
+                <p>Como não coletamos dados pessoais, não há dados a serem acessados, corrigidos ou excluídos.</p>
+                
+                <p class="pt-4">Esta política pode ser atualizada a qualquer momento. Última atualização: 03 de novembro de 2025.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
